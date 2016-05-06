@@ -1,0 +1,42 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/default.css" >
+</head>
+
+<body>
+<h3>Cadastro de produtos</h3>
+
+<form action="/produtos/novo" method="post">
+	<table>
+		<tr>
+			<td><label>T&iacute;tulo</label></td>
+			<td><input type='text' name='titulo' value='<%=livro.titulo%>'></td>
+		</tr>
+		
+		<tr>
+			<td><label>Descri&ccedil;&atilde;o</label></td>
+			<td><input type='text' name='descricao' value='<%=livro.descricao%>'></td>
+		</tr>
+
+		<tr>
+			<td><label>Pre&ccedil;o</label></td>
+			<td><input type='number' name='preco' min="0" value='<%=livro.preco%>'></td>
+		</tr>
+
+		<tr>
+			<td cols='2'>
+				<%  if(locals.validationErrors) %>
+				<% 		validationErrors.forEach(function(erro){ %>
+							<%= erro.msg %><br>				
+				<% 		}); %>
+			</td>
+		</tr>
+
+		<tr>
+			<td cols='2'><input type="submit" value="Cadastrar" id="cadastrar"></td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>

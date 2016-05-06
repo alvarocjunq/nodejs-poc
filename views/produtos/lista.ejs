@@ -1,0 +1,26 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/default.css" >
+</head>
+
+<body>
+<h1>Listagem de produtos</h1>
+
+<table>
+	<tr>
+		<th>Titulo</th>
+		<th>Descricao</th>
+		<th>Preco</th>
+	</tr>
+	
+	<%for(var i=0; i<produtos.length; i++){%>
+		<tr>
+			<td><%= produtos[i].titulo %></td>
+			<td><%= produtos[i].descricao %></td>
+			<td><%= produtos[i].preco %></td>
+		</tr>	
+	<%}%>
+</table>
+
+</body>
+</html>

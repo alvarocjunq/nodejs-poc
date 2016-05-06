@@ -1,0 +1,71 @@
+Vantagens
+-1 linguagem só (1 programador,manutenção, reaproveitamento de código (validação,modelo)
+- I/O não-blocante
+- Trabalho Assincrono
+- JSON
+
+
+Nubank
+- Lisp
+- Clousure
+
+Conveção de nome Javascript -> Train-case: ola-mundo.js
+
+-----------------
+Comandos NodeJS
+-----------------
+require = import
+
+Tipos de banco:
+- Relacional
+- Documentos
+- Key-value
+- Grafos
+
+FrameworkCSS simples: http://getskeleton.com/
+https://github.com/dhg/Skeleton/blob/gh-pages/dist/css/skeleton.css
+
+
+//Para debugar, deve-se subir a aplicacao como: node debug app.js
+//cont, c - Continue execution
+//next, n - Step next
+//step, s - Step in
+//out, o - Step out
+//pause - Pause running code (like pause button in Developer Tools)
+//debugger;
+
+--------------
+Conexao
+--------------
+Para criar um pool de conexão, pode-se usar o proprio driver do mysql
+
+
+--------------
+Framework para renderizar todos os clientes, via codigo (push)
+--------------
+Socket.IO
+
+
+//Para debugar, deve-se subir a aplicacao como: node debug app.js
+//cont, c - Continue execution
+//next, n - Step next
+//step, s - Step in
+//out, o - Step out
+//pause - Pause running code (like pause button in Developer Tools)
+//debugger;
+
+--------------
+Framewors para testes automatizados NodeJS
+--------------
+Jasmine
+Mocha (+Chai)
+Supertest = Teste de integração
+
+
+----*-----
+echo "# nodejs-poc" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/alvarocjunq/nodejs-poc.git
+git push -u origin master
