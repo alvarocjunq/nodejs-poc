@@ -10,7 +10,7 @@
 	<table>
 		<tr>
 			<td><label>T&iacute;tulo</label></td>
-			<td><input type='text' name='titulo' value='<%=livro.titulo%>'></td>
+			<td><input type='text' name='titulo' id='titulo' value='<%=livro.titulo%>'></td>
 		</tr>
 		
 		<tr>
@@ -25,18 +25,26 @@
 
 		<tr>
 			<td cols='2'>
-				<%  if(locals.validationErrors) %>
+				<%  if(locals.validationErrors){ %>
 				<% 		validationErrors.forEach(function(erro){ %>
 							<%= erro.msg %><br>				
 				<% 		}); %>
+				<% 	} %>
 			</td>
 		</tr>
 
 		<tr>
-			<td cols='2'><input type="submit" value="Cadastrar" id="cadastrar"></td>
+			<td cols='2'><input type="button" value="Cadastrar" id="cadastrar" onclick="onClickCadastrar(form)"></td>
 		</tr>
 	</table>
 </form>
+
+<script type="text/javascript">
+	function onClickCadastrar(formulario){
+		console.log(formulario.titulo.value);
+		formulario.submit();
+	}
+</script>
 
 </body>
 </html>

@@ -55,17 +55,28 @@ Socket.IO
 //debugger;
 
 --------------
-Framewors para testes automatizados NodeJS
+Framewors 
 --------------
+-> para testes automatizados NodeJS
 Jasmine
 Mocha (+Chai)
 Supertest = Teste de integração
 
+-> Para auto-registrar todas as rotas 
+express-load
+
+
+------------
+Heroku = Plataforma PaaS
+------------
 
 ----*-----
-echo "# nodejs-poc" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/alvarocjunq/nodejs-poc.git
 git push -u origin master
+----*-----
+
+AgileBrasil
+https://submissoes.agilebrazil.com/

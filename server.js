@@ -1,5 +1,9 @@
 var app = require('./custom-express')();
 
-app.listen(3000, function(){
+var server = app.listen(3000, function(){
 	console.log('server rodando');
 });
+
+var socketIO = require('socket.io');
+var io = socketIO(server);
+app.set('socketIO', io);

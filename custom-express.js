@@ -13,6 +13,7 @@ module.exports = function(){
 	app.use(expressValidator());
 	
 	require('./routes/produtos')(app);
+	require('./routes/promocoes')(app);
 
 	//paginas de erro depois das rotas acima
 	//Criacao de middleware para pagina 404

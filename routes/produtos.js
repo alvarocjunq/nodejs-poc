@@ -1,4 +1,4 @@
-var connectionFactory = require('../persistence/connection-factory');
+//var connectionFactory = require('../persistence/connection-factory');
 var ProdutoDao = require('../persistence/ProdutoDao');
 
 module.exports = function(app) {
@@ -21,6 +21,12 @@ module.exports = function(app) {
 		});
 	});
 
+
+	app.get('/produtos/novo', function (req, res){
+		console.log('caiu no get')
+		res.render('produtos/novo', {livro: {}});
+	});
+	
 	app.get('/produtos/:id', function(request, response, next) {
 		var id = request.params.id;
 		
@@ -34,11 +40,10 @@ module.exports = function(app) {
 	  	});
 	});
 
-	app.get('/produtos/novo', function (req, res){
-		res.render('produtos/novo', {livro: {}});
-	});
+
 
 	app.post('/produtos/novo',function(req, res){
+		console.log('caiu no post')
 		var livro = req.body;
 
 		req.assert('titulo', 'Preencha o titulo').notEmpty();
