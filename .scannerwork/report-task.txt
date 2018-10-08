@@ -1,0 +1,7 @@
+organization=alvarocjunq-github
+projectKey=alvarocjunq_nodejs-poc
+serverUrl=https://sonarcloud.io
+serverVersion=7.4.0.17856
+dashboardUrl=https://sonarcloud.io/dashboard?id=alvarocjunq_nodejs-poc
+ceTaskId=AWZUwAgvMw52PrQC0T9A
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWZUwAgvMw52PrQC0T9A
